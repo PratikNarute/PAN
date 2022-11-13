@@ -1,0 +1,117 @@
+package homework_programs;
+
+public class PrimeNumber2 
+{
+	public static void main(String[] args)
+{
+		
+		int n=2;
+		int c=0;
+	     for (int i=2;i<n;i++)
+	     {
+	    	 if(n%i==0)  // for proving not prime no
+	    	 {
+	    		  c=1;
+	    		  break;
+	    	 }
+	     }
+		
+	     if (c==1)
+	     {
+	     System.out.println("not prime number");
+	     }
+	     
+	     else
+	     {
+	    	 System.out.println(" prime number");
+	     }
+	     
+	     
+	     
+	     System.out.println("*****************************************************");
+	     
+	     
+	     
+	        // find non prime Number from array
+	     
+	     int a[]= {1,2,3,4,5,6,17,18,19,20};
+	     int b=0,d=0;
+		
+	     
+	     for (int i=0;i<a.length;i++) //i=2
+	     {
+	               for (int k=2;k<a[i];k++)//2
+	    		   {
+	    			   if (a[i]%k==0) //a[i]=3
+	    			   {
+	    				 b=a[i];
+	    				 System.out.print(b+" ");
+	    				 break;
+	    			   }
+	 
+	    		   }
+	     
+	     }
+	     System.out.println();
+	     
+	     System.out.println("*****************************************************");
+	     
+	     
+	     // Find prime number from 1 to 20 loop
+	 	c=0;
+	    for (int i=2;i<=20;i++)   
+	    {
+	    	for (int j=2;j<i;j++) 
+	    	{
+	    		if (i%j==0) //
+	    		{
+	    			c=1;
+	    			
+	    		}
+	    		
+	    	}
+	    	if (c==0)
+			{
+				System.out.print(i+" ");
+			
+			}
+	    	else
+			{
+				c=0;
+			}
+	    }
+	    System.out.println();
+	    
+	    System.out.println("*****************************************************");
+	    
+	    
+	    
+	   // find prime no from array
+	    
+	    int x[]= {1,2,5,4,10,15,19};
+	    int y=0; 
+	   for (int i=0;i<x.length;i++)
+	   {
+		   for(int j=2;j<x[i];j++)
+		   {
+			   if (x[i]%j==0)
+			   {
+				   b=1;
+			   }
+		   }
+		   if (b==0)
+		   {
+			   System.out.print(x[i]+" ");
+		   }
+		   else
+		   {
+			   b=0;
+		   }
+		   
+	   }
+
+	    
+	    
+	     
+}
+}
